@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+
+  .header_currency {
+    font-size: 16px;
+    color: rgb(192, 250, 105);
+    animation: pulse 2.5s infinite ease-in-out;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    gap: 60px;
+    flex-direction: row;
+    .header_currency {
+      font-size: 18px;
+    }
+  }
+}
+.icon_money {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../assets/euro.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.icon_money_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icon_money_usd {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../assets/usd.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
